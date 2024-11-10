@@ -18,6 +18,8 @@ body {
   width: 100%;
 }
 
+
+
 #checker:hover {
     cursor: pointer;
 }
@@ -62,12 +64,11 @@ body {
 #todo-submit {
   display: flex;
   width: 33rem;
-  /* gap: 0.7rem; */
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 10px 0.1rem rgb(228, 226, 226);
   background-color: white;
-  /* border: 1px solid var(--primary-reddish); */
+  border: 1px solid var(--primary-reddish);
 }
 
 #todo-submit > #addTodo {
