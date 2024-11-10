@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>TODO_APP</title>
+  </head>
+  <body>
+    <section class="todo-main">
+      <header class="todo-header">
+        <h1>todos</h1>
+      </header>
+      <main class="todo-container">
+        <form id="todo-submit">
+          <div class="d-none" id="checker">
+            <label for="add-all-todo" ></label>
+            <i class="material-icons downward-arrow" style="font-size: 2.7rem;">expand_more</i
+            >
+          </div>
+          <label for="add-todo"></label>
+          <input
+            type="text"
+            placeholder="What needs to be done?"
+            name="add-todo"
+            id="addTodo"
+          />
+        </form>
+        <div class="list-todo-container"></div>
+
+        <article>
+          <div class="d-none" id="booklet">
+            <div class="handleTodos1"></div>
+            <div class="handleTodos2"></div>
+            <div class="container">
+              <span class="item-left">1 item left!</span>
+              <div class="handle-btns">
+                <span class="all-items" id="handle-all">All</span>
+                <span class="active-items" id="handle-active-items"
+                  >Active</span
+                >
+                <span class="completed-items" id="handle-complete"
+                  >Completed</span
+                >
+              </div>
+              <div>
+                <span class="clear-completed-items" onclick="clearItems()"
+                  >Clear completed</span
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer></footer>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
