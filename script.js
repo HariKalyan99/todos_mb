@@ -10,6 +10,7 @@ let todoStatus = {
   completed: false,
 };
 
+
 todoForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -267,9 +268,6 @@ function clearItems() {
 }
 
 
-function markAllCompleted(){
-  
-}
 
 document.getElementById("checker")?.addEventListener("click", (event) => {
 
