@@ -11,6 +11,16 @@ let todoStatus = {
 };
 
 
+document.querySelector("#addTodo").addEventListener('click', (event) => {
+  document.querySelector("#todo-submit").style.border = "2px solid #b83f45"
+})
+
+document.querySelector(".todo-main").addEventListener("keydown", (event) => {
+  if(event.key === "Escape"){
+document.querySelector("#todo-submit").style.border = "none"
+  }
+})
+
 todoForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -152,6 +162,8 @@ function clearCompletedFn(arr, status) {
       }
     }
   }
+  document.querySelector("#handle-complete").className = document.querySelector("#handle-complete").className.split("handle-active")
+  document.querySelector("#handle-all").className+=" handle-active"
   status.all = true;
   return addToDOM(arr, status);
 }
@@ -270,7 +282,7 @@ function clearItems() {
 
 
 document.getElementById("checker")?.addEventListener("click", (event) => {
-
+  
   let down = document.querySelector('.downward-arrow');
   if(down.className.includes("colorize")){
     allTodosArr.map((x) => x.strike = false);

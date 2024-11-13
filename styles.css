@@ -70,7 +70,7 @@ body {
 }
 
 #todo-submit > #addTodo {
-  padding: 1rem 2.5rem 1rem 2.5rem;
+  padding: 1rem 2rem 1rem 2rem;
   font-size: 1.5rem;
   font-style: italic;
   border: none;
@@ -192,9 +192,10 @@ body {
   color: #b83f45;
 }
 
-input:focus {
-  outline: 2.5px solid #b83f45 !important;
+input:focus{
+  outline: none !important;
 }
+
 
 .parent-conatiner {
   height: 3rem;
@@ -247,6 +248,10 @@ input:focus {
 
 .handle-btns span {
   padding: 0.2rem;
+}
+
+.handle-btns span:hover {
+  cursor: pointer;
 }
 .all-items:hover {
   cursor: pointer;
